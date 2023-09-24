@@ -25,7 +25,7 @@
 
    
     <header>
-        <div class="q1">
+        <div informations>
             <h2> Sobre nós :) </h2>
             <p>Somos um site que fala somente sobre <strong><em>moda feminina</em></strong>,
                  onde discutimos marcas e comentamos sobre as roupas usadas em grandes eventos!</p>
@@ -34,12 +34,22 @@
     <menu>
         <h2>Conteúdos:</h2>
         <ul>
-            <li><a href="#inicio">Eventos</a></li>
-            <li><a href="#sobre">Marcas</a></li>
-            <p> If you have something <del>to say</del> <ins>to add</ins>, send me an email! </p>
-            <li><a href="mailto:emillylafernandes@gmail.com"> email me :) </a></li> 
+            <ul>
+                <li><button onclick="window.location.href='eventos.html'">Eventos</button></li>
+                <li><button onclick="window.location.href= 'marcas.html'">Marcas</button></li>
+                <li> If you have something <del>to say</del> <ins>to add</ins>, send me an <a href="mailto:emillylafernandes@gmail.com"> email!</a> </li>
         </ul>
+        
+        
     </menu>
+    <header>
+        <h4> Se inscreva para receber blogs semanalmente!!</h4>
+        <form>
+              <label for="email"> Digite seu email: </label>
+              <input type="email" name="email" id="email" required />
+              <input type="submit" value="Enviar" />
+          </form>
+    </header>
     
     </footer>
     &copy; 2023 new :)
